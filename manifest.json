@@ -1,0 +1,36 @@
+{
+  "{{chrome}}.manifest_version": 3,
+  "{{firefox}}.manifest_version": 2,
+  "name": "hh-apply",
+  "description": "Apply to a hh jobs.",
+  "version": "0.1.0",
+  "icons": {
+    "16": "icon/16.png",
+    "32": "icon/32.png",
+    "48": "icon/48.png",
+    "96": "icon/96.png",
+    "128": "icon/128.png"
+  },
+  "{{chrome}}.action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "{{firefox}}.browser_action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "{{firefox}}.permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "scripting",
+    "notifications",
+    "cookies",
+    "*://hh.ru/*"
+  ],
+  "background": {
+    "{{chrome}}.service_worker": "src/background.js",
+    "{{firefox}}.scripts": ["src/background.js"]
+  },
+  "{{firefox}}.web_accessible_resources": [
+    "src/contentScripts/loginPage.js"
+  ]
+}

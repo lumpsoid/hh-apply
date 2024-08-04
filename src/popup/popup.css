@@ -1,0 +1,60 @@
+/* popup.css */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Popup Styling */
+#popup {
+    display: block; /* Hidden by default */
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup Title Styling */
+#popup h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Form Input Styling */
+#popup input {
+    display: block;
+    width: calc(100% - 20px); /* Ensure inputs fit within the popup */
+    margin: 10px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+#popup button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#popup button:hover {
+    background-color: #0056b3;
+}
+
+#popup button.close {
+    background-color: #6c757d;
+}
+
+#popup button.close:hover {
+    background-color: #5a6268;
+}
+
