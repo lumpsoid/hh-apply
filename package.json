@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "watch": "vite build --watch --mode development"
+    "watch": "vite build --watch --mode development",
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.0.0",
